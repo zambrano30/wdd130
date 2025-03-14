@@ -32,15 +32,15 @@ nav{
 }
 nav a{
     color: white;
-    display:block;
+    display: block;
     padding: 20px;
 }
 h1{
-    color: rgb(210, 233, 129);
+    color: rgb(52,73,94);
 }
 img{
     width: 150px;
-    height:auto;
+    height: auto;
     border:1px solid black;
     padding: 2px;
     box-shadow:0 0 30px gray;
