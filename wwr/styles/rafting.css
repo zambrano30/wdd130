@@ -96,7 +96,7 @@ p {
     color: var(--hero-text-color);
     padding: 10px;
     border-radius: 5px;
-    max-width: 300px;
+    max-width: 100px;
 }
 
 .hero article img {
