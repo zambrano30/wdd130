@@ -1,0 +1,126 @@
+:root {
+    --header-height: 60px;
+    --footer-height: 60px;
+    --nav-width: 200px;
+    --nav-height: 100vh;
+    --primary-color: #BCD4DE;
+    --secondary-color: #A5CCD1;
+    --text-color: #17191A;
+    --background-color: #f4f4f4;
+    --hero-overlay-color: rgba(0, 0, 0, 0.5);
+    --hero-text-color:#BCB111;
+}
+
+body {
+    font-family: 'Merriweather', serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto; /* Center the page */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+header img {
+
+    height: 100px;
+    margin-top: 1px;
+    margin-left: 10px;
+    
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--hero-text-color);
+    background-color: var(--hero-overlay-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: var(--hero-overlay-color);
+    color: var(--hero-text-color);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .sociallinks a {
+    color:var(--hero-text-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .sociallinks img {
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    text-decoration: none; 
+}
