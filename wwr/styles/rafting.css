@@ -23,21 +23,35 @@ body {
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
     padding: 10px 20px;
+    background-color: var(--secondary-color);
 }
 
 header img {
+    height: 80px;
+}
 
-    height: 100px;
-    margin-top: 1px;
-    margin-left: 10px;
-    
+header h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
 
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 nav a {
@@ -107,9 +121,14 @@ p {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+footer .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 footer .sociallinks a {
@@ -119,8 +138,71 @@ footer .sociallinks a {
 }
 
 footer .sociallinks img {
-    height: 20px;
-    vertical-align: middle;
-    margin-left: 5px;
-    text-decoration: none; 
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+footer .sociallinks img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-align: right;
+}
+
+footer .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+footer .sociallinks a {
+    color: var(--hero-text-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .sociallinks img {
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+footer .sociallinks img:hover {
+    transform: scale(1.1);
+}
+
+.adventures {
+    padding: 20px;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 calc(20% - 15px);
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adventure-gallery figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: var(--text-color);
 }
